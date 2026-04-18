@@ -1,0 +1,39 @@
+{
+    "namespace": "NativeNotification",
+
+    "bridge_functions": [
+        {
+            "name": "NativeNotification.SendNotification",
+            "android": "com.pteal79.plugins.nativenotification.NativeNotificationFunctions.SendNotification",
+            "ios": "NativeNotificationFunctions.SendNotification",
+            "description": "Send a notification string through the native layer and dispatch NativeNotification event"
+        }
+    ],
+
+    "android": {
+        "permissions": [],
+        "dependencies": {
+            "implementation": []
+        },
+        "activities": [],
+        "services": [],
+        "receivers": [],
+        "providers": []
+    },
+
+    "ios": {
+        "info_plist": {},
+        "dependencies": {
+            "swift_packages": [],
+            "pods": []
+        }
+    },
+
+    "events": [
+        "PTeal79\\NativeNotification\\Events\\MobileEvent"
+    ],
+
+    "hooks": {
+        "copy_assets": "nativephp:native-notification:copy-assets"
+    }
+}
