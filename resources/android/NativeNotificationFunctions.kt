@@ -5,7 +5,7 @@ import android.os.Looper
 import androidx.fragment.app.FragmentActivity
 import com.nativephp.mobile.bridge.BridgeFunction
 import com.nativephp.mobile.bridge.BridgeResponse
-import com.nativephp.mobile.NativeActionCoordinator
+import com.nativephp.mobile.utils.NativeActionCoordinator
 import org.json.JSONObject
 
 object NativeNotificationFunctions {
